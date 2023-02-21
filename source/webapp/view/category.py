@@ -23,7 +23,7 @@ def category_view(request):
     return render(request, 'category.html', context=context)
 
 
-def category_delete(pk):
+def category_delete(request, pk):
     category = Category.objects.get(pk=pk)
     category.delete()
     return redirect('categories_view')

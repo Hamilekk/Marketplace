@@ -47,6 +47,14 @@
             <h5>{{ product.price }}$</h5>
             <p>{{ product.description }}</p>
             <h6>added: {{ product.added_at }}</h6>
+            <div class="col-3">
+                <a href="{% url 'product_edit' product.pk %}"
+                   type="button" class="btn btn-primary">Изменить</a>
+            </div>
+            <div class="col-3">
+                <a href="{% url 'product_delete' product.pk %}"
+                   type="button" class="btn btn-danger">Удалить</a>
+            </div>
         </div>
     </div>
 </div>

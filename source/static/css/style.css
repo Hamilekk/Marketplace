@@ -9,6 +9,7 @@
 
 }
 
+
 .card-body {
     color: black !important;
 }
@@ -36,7 +37,7 @@
 }
 
 .row p {
-    margin-top: -60px;
+    margin-top: -50px;
 }
 
 .row h5 {
@@ -44,7 +45,7 @@
 }
 
 .row h6 {
-    margin-top: -80px;
+    margin-top: -70px;
 }
 
 .mb-2 label {
@@ -65,4 +66,12 @@
 
 .col-2 {
     margin-left: 40px !important;
+}
+
+.col-3 {
+    margin-top: -60px;
+}
+
+.col {
+    display: flex;
 }
