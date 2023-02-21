@@ -1,0 +1,94 @@
+[
+{
+    "model": "webapp.category",
+    "pk": 2,
+    "fields": {
+        "category": "Седан",
+        "description": "Закрытый кузов легкового автомобиля с багажником, структурно отделённым от пассажирского салона"
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 3,
+    "fields": {
+        "category": "Внедорожник",
+        "description": "автомобиль, обладающий повышенной проходимостью по бездорожью за счёт большого клиренса, ведущих передних и задних колёс."
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 4,
+    "fields": {
+        "category": "Универсал",
+        "description": "Автомобиль в кузове универсал является действительно универсальным и подходит для путешествий с семьей, транспортировки груза, поездок на дачу и т. д. Некоторые считают, что дизайн универсала не такой стильный, как у седана. В этом есть доля правды, однако производители выпускают разные модели"
+    }
+},
+{
+    "model": "webapp.category",
+    "pk": 5,
+    "fields": {
+        "category": "Пикап",
+        "description": "Автомобиль с закрытой кабиной и открытой грузовой площадкой с невысокими сторонами и задней дверью."
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 1,
+    "fields": {
+        "name": "Kia k5",
+        "description": "Универсальный автомобиль ",
+        "category": 2,
+        "added_at": "2023-02-20T13:16:42.926Z",
+        "price": "25000.00",
+        "image": "https://www.autolifttech.net/uploads/posts/2020-11/1606747618_maxresdefault.jpg"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 2,
+    "fields": {
+        "name": "Land Cruiser 200",
+        "description": "Шикарный внедорожник премиум класса, с очень хорошей проходимостью, и очень удобен в эксплуатации ",
+        "category": 3,
+        "added_at": "2023-02-22T19:23:41.786Z",
+        "price": "80000.00",
+        "image": "https://www.allcarz.ru/wp-content/uploads/2020/08/foto-tlc-200-2020_00.jpg"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 3,
+    "fields": {
+        "name": "Mercedes-Benz W223",
+        "description": "Авто супер-Бизнес класса",
+        "category": 2,
+        "added_at": "2023-02-20T14:06:26.187Z",
+        "price": "100000.00",
+        "image": "https://rightrent24.ru/upload/iblock/6d1/mercedes-benz-s-class-w-223-premium-1.webp"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 5,
+    "fields": {
+        "name": "BMW M5 CS",
+        "description": "BMW M5 CS ограниченная серия ",
+        "category": 2,
+        "added_at": "2023-02-20T14:17:38.115Z",
+        "price": "90000.00",
+        "image": "https://autonews.autoua.net/media/cache/28/bf/28bfdbcc55a86bdc2bc084e788062e1d.jpg"
+    }
+},
+{
+    "model": "webapp.product",
+    "pk": 6,
+    "fields": {
+        "name": "Subaru Outback",
+        "description": "Subaru Outback(2022)",
+        "category": 4,
+        "added_at": "2023-02-20T14:20:03.937Z",
+        "price": "50000.00",
+        "image": "https://autoreview.ru/images/Article/1725/Article_172553_860_575.jpg"
+    }
+}
+]
