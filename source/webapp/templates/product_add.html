@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>{% block title %}Add{% endblock %}</title>
+</head>
+<body><div class="container">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'index' %}">Marketplace.kz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="paTitlege"
+                           href="{% url 'products_view' %}">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'categories_view' %}">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'products_add' %}">Add Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'category_add' %}">Add Category</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <form action="{% url 'products_add' %}" method="post">
+        {% csrf_token %}
+        <div class="mb-2" style="margin-top:5px; text-align: center">
+            <h2>Добавление автомобиля</h2>
+        </div>
+        <div class="mb-2">
+            <label for="name" class="form-label">Название автомобиля</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Марка автомобиля">
+        </div>
+        <div class="mb-2">
+            <label for="price" class="form-label">Стоимость автомобиля</label>
+            <input type="text" id="price" name="price"
+                   placeholder="$">
+        </div>
+        <div class="mb-2">
+            <label for="image" class="form-label">URL картинки автомобиля</label>
+            <input type="text" id="image" name="image"
+                   placeholder="URL картинки автомобиля">
+        </div>
+        <div class="mb-2">
+            <label for="category">Выберите категорию</label>
+            <select name="category" id="category">
+                {% for category in categories %}
+                    <option value="{{ category.category }}">{{ category.category }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="mb-2">
+            <label for="description">Введите описание автомобиля</label>
+            <textarea id="description" name="description" rows="3" cols="53"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary green">Добавить</button>
+    </form>
+</div>
+</body>
+</html>

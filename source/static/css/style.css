@@ -1,0 +1,68 @@
+.container {
+    max-width: 1200px;
+}
+
+.mb-3 {
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: darkgray !important;
+
+}
+
+.card-body {
+    color: black !important;
+}
+
+.bg-body-tertiary {
+    background-color: darkgray !important;
+}
+
+.navbar-collapse {
+    flex-flow: column;
+}
+
+.image_detail {
+    width: 50%;
+}
+
+.rows {
+    display: flex;
+    margin-top: 5px;
+}
+
+.row {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.row p {
+    margin-top: -60px;
+}
+
+.row h5 {
+    margin-top: -60px;
+}
+
+.row h6 {
+    margin-top: -80px;
+}
+
+.mb-2 label {
+    width: 200px;
+}
+
+.mb-2 select {
+    width: 255px;
+}
+
+.list-group-item {
+    display: flex;
+}
+
+.form p {
+    width: 200px;
+}
+
+.col-2 {
+    margin-left: 40px !important;
+}
