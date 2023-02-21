@@ -90,5 +90,23 @@
         "price": "50000.00",
         "image": "https://autoreview.ru/images/Article/1725/Article_172553_860_575.jpg"
     }
+},
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$bNNTmOSU2OhMKwGlJc4hFq$XBWzHNF7pTAcyrpqXvQD0OiWfVLISNPzpbyjwdmc70Q=",
+        "last_login": "2023-02-21T12:34:48.778Z",
+        "is_superuser": true,
+        "username": "root",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-02-21T12:31:34.607Z",
+        "groups": [],
+        "user_permissions": []
+    }
 }
 ]
